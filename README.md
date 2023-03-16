@@ -45,3 +45,11 @@ This new model appears to have performed better than the baseline model from mid
 ### Express your final conclusions and analysis.
 
 Overall, based on the plots, it would appear that the baseline model produced the best and most consistent results. The baseline model consistently produced returns that exceeded the market and held up better during the COVID downturn in early 2020. 
+
+The algorithm with the DateOffset value set at 6 months rather than 3 months produced signficiantly better returns compared to the ETf itself after the COVID-induced crash but trailed the ETF's performance in 2019. 
+
+The algorithm with the adjusted SMA input features for the short and long window set at 8 and 200, respectively consistently underperformed the ETF's returns. 
+
+The new model created using the LogisticRegression classifier produced stellar returns from mid-2018 to mid-2020 but took an unexpected and uncorrelated downturn in late 2020. This needs to be further investigated as it just completely went against ETF's general uptrend. This unexpected turn and inconsistency should make any investor hesitant. The fact that the ETF itself was trending higher while the algorithm lost money is cause for great concern. 
+
+Of all the various models produced, the baseline model is the clear winner and should be deployed live going forward. 
